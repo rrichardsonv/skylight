@@ -3,9 +3,14 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const spacing = ['m', 'ml', 'mr', 'mt', 'mb', 'mx', 'my', 'p', 'pl', 'pr', 'pt', 'pb', 'px', 'py'];
-/** */
+
+function getDisplayName(WrappedComponent) {
+  return WrappedComponent.displayName || WrappedComponent.name || 'Component';
+}
+
 const withStyles = WrappedComponent => {
   class Styled extends PureComponent {
+    static displayName = `Styled(${getDisplayName(WrappedComponent)})`;
     render() {
       const {
         children,
