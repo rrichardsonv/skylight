@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { Flex, Box, Text } from 'rebass';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Flex flexWrap="wrap" mx={-2}>
+        <Box width={1 / 4} px={2}>
+          <Text p={1} color="white" bg="skyblue">
+            Aria
+          </Text>
+        </Box>
+        <Box width={3 / 4} px={2}>
+          <Text p={1} color="white" bg="skyblue">
+            Rest
+          </Text>
+        </Box>
+      </Flex>
     );
   }
 }
