@@ -16,4 +16,7 @@
 
 ### Notes:
 
-Very simple currently. Next steps would be to clean up the styles. Display meta data in a better way.
+Very simple currently. Next steps would be:
+
+- Clean up the styles.
+- Add search (needs proper database server side).
